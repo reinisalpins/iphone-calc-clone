@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-container">
+        <div class="calculators">
+            <div class="calc-screen">
+                <div class="numbers">
+                    <p id="ekrans">0</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="button"><p style="background-color:#9F9F9F ;"  id="AC" onclick="clearScreen()">AC</p></div>
+                <div class="button" ><p style="background-color:#9F9F9F ;" id="+/-" onclick="handleOperationClick(id)">+/-</p></div>
+                <div class="button"><p style="background-color: #9F9F9F ;" id="%" onclick="handleOperationClick(id)">%</p></div>
+                <div class="button" ><p style="background-color:#F69906 ;" id="/" onclick="handleOperationClick(id)">÷</p></div>
+            </div>
+            <div class="button-container">
+                <div class="button"><p id="7" onclick="handleNumberClick(id)">7</p></div>
+                <div class="button"><p id="8" onclick="handleNumberClick(id)">8</p></div>
+                <div class="button"><p id="9" onclick="handleNumberClick(id)">9</p></div>
+                <div class="button"><p style="background-color:#F69906 ;" id="*"  onclick="handleOperationClick(id)">×</p></div>
+            </div>
+            <div class="button-container">
+                <div class="button"><p id="4" onclick="handleNumberClick(id)">4</p></div>
+                <div class="button"><p id="5" onclick="handleNumberClick(id)">5</p></div>
+                <div class="button"><p id="6" onclick="handleNumberClick(id)">6</p></div>
+                <div class="button" ><p style="background-color:#F69906 ;" id="-" onclick="handleOperationClick(id)">-</p></div>
+            </div>
+            <div class="button-container">
+                <div class="button"><p id="1" onclick="handleNumberClick(id)">1</p></div>
+                <div class="button"><p id="2" onclick="handleNumberClick(id)">2</p></div>
+                <div class="button"><p id="3" onclick="handleNumberClick(id)">3</p></div>
+                <div class="button"><p style="background-color:#F69906 ;" id="+" onclick="handleOperationClick(id)">+</p></div>
+            </div>
+            <div class="button-container">
+                <div class="button" style="flex-basis: 780px;" ><p style="width: 80%; border-radius:70px; text-align: left; padding-left: 20px;" id="0" onclick="handleNumberClick(id)">0</p></div>
+                <div class="button"><p id="." onclick="handleNumberClick(id)">.</p></div>
+                <div class="button" ><p style="background-color:#F69906 ;" id="="  onclick="handleOperationClick(id)">=</p></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+    
+</body>
+</html>
